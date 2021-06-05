@@ -1,0 +1,14 @@
+D:\martin\batterycontrol\bin\Debug\batterycontrol.exe.config
+D:\martin\batterycontrol\bin\Debug\batterycontrol.exe
+D:\martin\batterycontrol\bin\Debug\batterycontrol.pdb
+D:\martin\batterycontrol\obj\Debug\batterycontrol.csprojAssemblyReference.cache
+D:\martin\batterycontrol\obj\Debug\batterycontrol.Form1.resources
+D:\martin\batterycontrol\obj\Debug\batterycontrol.Properties.Resources.resources
+D:\martin\batterycontrol\obj\Debug\batterycontrol.csproj.GenerateResource.cache
+D:\martin\batterycontrol\obj\Debug\batterycontrol.csproj.CoreCompileInputs.cache
+D:\martin\batterycontrol\obj\Debug\batterycontrol.exe
+D:\martin\batterycontrol\obj\Debug\batterycontrol.pdb
+D:\martin\batterycontrol\bin\Debug\batterycontrol.exe.manifest
+D:\martin\batterycontrol\bin\Debug\batterycontrol.application
+D:\martin\batterycontrol\obj\Debug\batterycontrol.exe.manifest
+D:\martin\batterycontrol\obj\Debug\batterycontrol.application

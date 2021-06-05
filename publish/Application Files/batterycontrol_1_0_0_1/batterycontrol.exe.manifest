@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="batterycontrol.exe" version="1.0.0.1" publicKeyToken="af33cd551fd6fa4e" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="bat_YIU_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="batterycontrol" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="batterycontrol.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="batterycontrol.exe" size="39888">
+      <assemblyIdentity name="batterycontrol" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>z7+JnqvDFyOvPV8IP9P7xaSBwBVX3bstC3jfU1w0OKs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="bat_YIU_icon.ico" size="25058">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>edHFzjomFET3zvKiehyWfT6nG2i5kH/rVFS8tF40uB8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="batterycontrol.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LEPY\martinbandung" issuerKeyHash="769f1a548444f5abe9e020feecf69d9e4e292b00" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A1bX/bT0bv4aO7rkJhCDH79l8dAYxQ7r154uZp/NGDA=</DigestValue></Reference></SignedInfo><SignatureValue>eJtLYIcFQfD3Krg9CoLK/OqNj/35+KSTecHtCBNoRyaN/vXjaENq6/KweM0wMNBoMs66u4s45IMdfOc7OaZMfFFUXfIGxBlonAZN2qy7QUBQWsvo8NCREDlonSYwCFpK5d/kKvchI40BfZzDlQY+W2Cehj9k2b8I2Ec0qd91t+w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3jAsQtQbRFkQwdh6iLuBPACEQY0UOCpg50lOAQZ/ZWg9NRvvnOBUQfUdwb+wdlVEsTlWecfV3my1MISdSM2Uyu4Vwaynz2ZlG+aZlswmQJpDnpyDcuJDWz0u3pWp8YGBa++flXO3kQfa03nkNlMSYZ2mQqB6K8fizAn+U1xoOiE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3018cd9f662e9ed7eb0ec518d0f165bf1f831026e4ba3b1afe6ef4b4fdd75603" Description="" Url=""><as:assemblyIdentity name="batterycontrol.exe" version="1.0.0.1" publicKeyToken="af33cd551fd6fa4e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LEPY\martinbandung</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C30x2DQdim5Yo/FRiAZG4hdl4XulqY+lxXEhHOvoS9A=</DigestValue></Reference></SignedInfo><SignatureValue>vKK75a46lGVR+ON/Cs9YpJCIdjyhSOyjL0PyWMDNFFXHqQiE7uyQ3V4mMkOh0U1jPPaXEeVtg+m43Age+GcjIAcoU1bN/UqeYcAKj4ppuGNcC5odBpFb/txo0fQvLrGals5rpZ0FO7q8EbYm2feERCl08ySUsX7V9L4xL/00MRk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3jAsQtQbRFkQwdh6iLuBPACEQY0UOCpg50lOAQZ/ZWg9NRvvnOBUQfUdwb+wdlVEsTlWecfV3my1MISdSM2Uyu4Vwaynz2ZlG+aZlswmQJpDnpyDcuJDWz0u3pWp8YGBa++flXO3kQfa03nkNlMSYZ2mQqB6K8fizAn+U1xoOiE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQeucBBslsv7NAmoXPzg/D7DANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQATABFAFAAWQBcAG0AYQByAHQAaQBuAGIAYQBuAGQAdQBuAGcwHhcNMjEwNjA1MTAzMTA1WhcNMjIwNjA1MTYzMTA1WjAvMS0wKwYDVQQDHiQATABFAFAAWQBcAG0AYQByAHQAaQBuAGIAYQBuAGQAdQBuAGcwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAN4wLELUG0RZEMHYeoi7gTwAhEGNFDgqYOdJTgEGf2VoPTUb75zgVEH1HcG/sHZVRLE5VnnH1d5stTCEnUjNlMruFcGsp89mZRvmmZbMJkCaQ56cg3LiQ1s9Lt6VqfGBgWvvn5Vzt5EH2tN55DZTEmGdpkKgeivH4swJ/lNcaDohAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAveP6Z00UvTjTmZWd7emqo327LK2QXJ8aB6ICbisO7pRh+YREPGw/uFOaYZvyXCbmpwFw6QrowcES/qRpxYFTSupTs8f+9tqnY73mCXVqCzBSj/hDxsZH8VAeYlLWMmGLyU3iEtnhylqy2oBZgKNcirvZJ2LM/nQ8w/dWov0nSQw=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
