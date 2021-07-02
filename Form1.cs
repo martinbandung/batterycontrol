@@ -124,6 +124,7 @@ namespace batterycontrol
                 //serialPort1.DataReceived += SerialPort1_DataReceived;
                 serialPort1.Open();
                 timer1.Enabled = true;
+                cbcharge.Enabled = true;
             }
             else
             {
@@ -167,6 +168,41 @@ namespace batterycontrol
             Show();
             this.WindowState = FormWindowState.Normal;
             notifyIcon1.Visible = false;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.Text=="Refresh")
+            {
+                getAvailablePort();
+            }
+            
+        }
+
+        private void chargeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (cbopen.Checked)
+            {
+                cbcharge.Checked = true;
+            }
+            
+        }
+
+        private void stopChargeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (cbopen.Checked)
+            {
+                cbcharge.Checked = false;
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (cbopen.Checked)
+            {
+                cbcharge.Checked = false;
+            }
+            this.Close();
         }
     }
 }

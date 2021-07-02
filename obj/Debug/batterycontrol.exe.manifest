@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="batterycontrol.exe" size="91600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="batterycontrol.exe" size="93136">
       <assemblyIdentity name="batterycontrol" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lYz6lAW8reuKREFScN9qnXxlAR2iSL8ukEvf3asRVbA=</dsig:DigestValue>
+        <dsig:DigestValue>2uJXiKgEltSpBmH8YonnOxSK7bOoZlLcPo0UFXnBwFM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

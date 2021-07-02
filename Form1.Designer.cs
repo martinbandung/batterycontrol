@@ -53,7 +53,12 @@ namespace batterycontrol
             this.cbopen = new System.Windows.Forms.CheckBox();
             this.cbcharge = new System.Windows.Forms.CheckBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.chargeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopChargeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -72,6 +77,8 @@ namespace batterycontrol
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(119, 21);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "Choose";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // progressBar1
             // 
@@ -222,7 +229,7 @@ namespace batterycontrol
             // 
             // timer1
             // 
-            this.timer1.Interval = 120000;
+            this.timer1.Interval = 60000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // serialPort1
@@ -243,6 +250,7 @@ namespace batterycontrol
             // cbcharge
             // 
             this.cbcharge.AutoSize = true;
+            this.cbcharge.Enabled = false;
             this.cbcharge.Location = new System.Drawing.Point(246, 20);
             this.cbcharge.Name = "cbcharge";
             this.cbcharge.Size = new System.Drawing.Size(60, 17);
@@ -254,9 +262,40 @@ namespace batterycontrol
             // notifyIcon1
             // 
             this.notifyIcon1.BalloonTipTitle = "Battery Control";
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.chargeToolStripMenuItem,
+            this.stopChargeToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(138, 70);
+            // 
+            // chargeToolStripMenuItem
+            // 
+            this.chargeToolStripMenuItem.Name = "chargeToolStripMenuItem";
+            this.chargeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.chargeToolStripMenuItem.Text = "Charge";
+            this.chargeToolStripMenuItem.Click += new System.EventHandler(this.chargeToolStripMenuItem_Click);
+            // 
+            // stopChargeToolStripMenuItem
+            // 
+            this.stopChargeToolStripMenuItem.Name = "stopChargeToolStripMenuItem";
+            this.stopChargeToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.stopChargeToolStripMenuItem.Text = "Stop charge";
+            this.stopChargeToolStripMenuItem.Click += new System.EventHandler(this.stopChargeToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -281,6 +320,7 @@ namespace batterycontrol
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,6 +350,10 @@ namespace batterycontrol
         private System.Windows.Forms.CheckBox cbopen;
         private System.Windows.Forms.CheckBox cbcharge;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem chargeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stopChargeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

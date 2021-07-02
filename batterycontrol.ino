@@ -8,19 +8,36 @@ bool fungsi1Flag=false;
 void fungsi1(uint32_t _parameter){
   if(nilaiParameter==1){
     Serial.println("hidup");
-    digitalWrite(7, 0);
+    digitalWrite(8, 0);
+    delay(2000);
+    digitalWrite(8, 0);
+    delay(2000);
+    digitalWrite(8, 0);
+    delay(2000);        
   }
   if(nilaiParameter==0){
     Serial.println("mati");
-    digitalWrite(7, 1);
+    digitalWrite(8, 1);
+    delay(2000);
+    digitalWrite(8, 1);
+    delay(2000);    
+    digitalWrite(8, 1);
+    delay(2000);
   }
 }
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(19200);
-  pinMode(7,OUTPUT);
-  digitalWrite(7, 1);
+  pinMode(8,OUTPUT);
+  digitalWrite(8, 0);
+  delay(1000);   
+  digitalWrite(8, 1);
+  delay(1000); 
+  digitalWrite(8, 0);
+  delay(1000);   
+  digitalWrite(8, 1);
+  delay(1000);     
 }
 
 void loop() {
@@ -47,11 +64,11 @@ void loop() {
     fungsi1Flag=false;
     fungsi1(nilaiParameter);
   }
-
+/*
   uint16_t dataADC0=analogRead(0);
   uint16_t dataADC1=analogRead(1);
   uint16_t dataADC2=analogRead(2);
-
+*/
   //Serial.print(dataADC0);Serial.print(",");Serial.print(dataADC1);Serial.print(",");Serial.print(dataADC2);Serial.println(",");
   delay(500);
   
