@@ -132,7 +132,7 @@ namespace batterycontrol
             this.tbmax3.Name = "tbmax3";
             this.tbmax3.Size = new System.Drawing.Size(65, 20);
             this.tbmax3.TabIndex = 9;
-            this.tbmax3.Text = "60";
+            this.tbmax3.Text = "65";
             // 
             // tbmin3
             // 
@@ -140,7 +140,7 @@ namespace batterycontrol
             this.tbmin3.Name = "tbmin3";
             this.tbmin3.Size = new System.Drawing.Size(65, 20);
             this.tbmin3.TabIndex = 8;
-            this.tbmin3.Text = "55";
+            this.tbmin3.Text = "60";
             // 
             // tbmax2
             // 
