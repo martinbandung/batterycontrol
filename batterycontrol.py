@@ -35,25 +35,27 @@ def convertTime(seconds):
 # converting seconds to hh:mm:ss
 
 
-min= 60
-max= 65
+min= 57.5
+max= min+5.0
 
 def checkbat():
-    threading.Timer(120.0, checkbat).start()
+    threading.Timer(30.0, checkbat).start()
     battery = psutil.sensors_battery()
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     
     print(current_time)
     #print("Battery left\t: ", convertTime(battery.secsleft))
-    print("Battery percentage\t: ", round(battery.percent,1))
+    
 
     if(battery.percent>=max):
         ser.write(b'fungsi1:0')
         
     if(battery.percent<=min):
         ser.write(b'fungsi1:1')
-
+        
+    battery = psutil.sensors_battery()    
+    print("Battery percentage\t: ", round(battery.percent,1))
     print("Power plugged in\t: ", battery.power_plugged)
     
 
