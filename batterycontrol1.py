@@ -6,7 +6,7 @@ from datetime import datetime
 openstat=True
 
 while(openstat):
-    port=input('Insert port name (COMn, /dev/ttyUSBn): ')
+    port='/dev/ttyUSB0'
     try:
         ser=serial.Serial(port, 19200, timeout=1)
         openstat=False
@@ -35,8 +35,8 @@ def convertTime(seconds):
 # converting seconds to hh:mm:ss
 
 
-min= 50.0
-max= min+15.0
+min= 57.5
+max= min+5.0
 
 def checkbat():
     threading.Timer(30.0, checkbat).start()

@@ -35,11 +35,11 @@ def convertTime(seconds):
 # converting seconds to hh:mm:ss
 
 
-min= 57.5
-max= min+5.0
+min= 45.0
+max= min+15.0
 
 def checkbat():
-    threading.Timer(120.0, checkbat).start()
+    threading.Timer(30.0, checkbat).start()
     battery = psutil.sensors_battery()
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
